@@ -4,7 +4,7 @@ Python script for converting XYZ raster tiles for slippy maps to a georeferenced
 ## Requirement:
 
 - install GDAL.
-- Add [Mapbox's token](https://account.mapbox.com/), create PATH `Mapbox_token` and input your token.
+- Add [Mapbox's token](https://account.mapbox.com/), create PATH named `Mapbox_token` and input your token.
 
 ## Usage:
 
