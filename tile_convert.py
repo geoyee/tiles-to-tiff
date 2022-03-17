@@ -2,14 +2,14 @@ from math import log, tan, radians, cos, pi, floor, degrees, atan, sinh
 
 
 def sec(x):
-    return(1/cos(x))
+    return(1 / cos(x))
 
 
 def latlon_to_xyz(lat, lon, z):
     tile_count = pow(2, z)
     x = (lon + 180) / 360
     y = (1 - log(tan(radians(lat)) + sec(radians(lat))) / pi) / 2
-    return(tile_count*x, tile_count*y)
+    return(tile_count * x, tile_count * y)
 
 
 def bbox_to_xyz(lon_min, lon_max, lat_min, lat_max, z):

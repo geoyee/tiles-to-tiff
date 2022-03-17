@@ -1,12 +1,18 @@
 # tiles-to-tiff
-Python script for converting XYZ raster tiles for slippy maps to a georeferenced TIFF image. Written for this tutorial: https://dev.to/jimutt/generate-merged-geotiff-imagery-from-web-maps-xyz-tile-servers-with-python-4d13
+Python script for converting XYZ raster tiles for slippy maps to a georeferenced TIFF image. From [https://github.com/jimutt/tiles-to-tiff](https://github.com/jimutt/tiles-to-tiff).
 
-## Prerequisites:
-- GDAL
-- Empty "output" and "temp" folders in project directory. 
+## Requirement:
+
+- install GDAL.
+- Add [Mapbox's token](https://account.mapbox.com/), create PATH `Mapbox_token` and input your token.
 
 ## Usage:
-- Modify configuration in `tiles_to_tiff.py` according to personal preferences.
-- Run script with `$ python tiles_to_tiff.py`
 
-For more information see the accompanying dev.to post. 
+```
+python tiles_to_tiff.py
+```
+
+## Update:
+
+Fix it as a function, and try to transplant it to our QGIS plugin [buildseg v0.3](https://github.com/deepbands/buildseg).
+
