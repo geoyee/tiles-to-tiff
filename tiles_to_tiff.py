@@ -4,7 +4,11 @@ import glob
 import shutil
 import requests
 import socket
-from tile_convert import bbox_to_xyz, tile_edges
+
+try:
+    from tile_convert import bbox_to_xyz, tile_edges
+except ImportError:  # for import
+    from .tile_convert import bbox_to_xyz, tile_edges
 
 try:
     import gdal
