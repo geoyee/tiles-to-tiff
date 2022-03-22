@@ -61,9 +61,9 @@ def get_raster_from_titles(ranges, save_path, token, zoom=18, tmp_dir=None):
     # starting
     if tmp_dir is None:
         tmp_dir = os.path.join(os.path.dirname(__file__), "temp")
-        print(f"Temp dir: {tmp_dir}.")
         if not osp.exists(tmp_dir):
             os.makedirs(tmp_dir)
+    print(f"Temp dir: {tmp_dir}.")
     lon_min = ranges["lon_min"]
     lon_max = ranges["lon_max"]
     lat_min = ranges["lat_min"]
